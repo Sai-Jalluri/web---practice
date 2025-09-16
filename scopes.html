@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> scopes</title>
+</head>
+<body>
+
+             <!-- types in scopes
+
+    1.global scopes
+    2.function scopes
+    3.block scope -->
+
+    <script>
+
+        //   global scope
+
+        var a = "sai"
+        let b = "avinash"
+        const c = "ashok"
+
+        function friends(){
+            console(b,a+c)
+        }
+        friends();
+
+        // function scope (only print in the function scope .not ine the outside)
+
+        function fruits(){
+
+         var a = "bannana"
+        let b = "apple"
+        const c = "orange"
+            
+        console.log(a,b,c)
+        }
+
+        fruits();
+
+        // block scope (only var will be print outside of the function but let and const will print inside)
+        
+        function games(){
+
+            if (10<20){
+            var  cricket = "virat"
+            let tennis = "abishek sharma"
+            const hockey = "hardik pandya"
+
+            console.log(tennis,hockey)
+
+        }
+        console.log(cricket, )
+
+    }
+
+        games();
+        
+   
+   </script>
+    
+</body>
+</html>
