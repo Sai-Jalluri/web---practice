@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> methods </title>
+</head>
+<body>
+
+    <!-- push()
+    pop()
+    shift()
+    unshift()
+    concat()
+    join()
+    slice()
+    splice()
+    indexof()
+    foreach() -->
+
+    <script>
+
+        // push() = "add one more elements to the end of an array and returns the new length"
+
+        let names = ["sai" , "avinash" , "ashok"]
+        names.push("mahi " ,"105")
+
+        console.log(names)
+
+        // pop() = remove the last element of the array and returns that element
+
+        let books = ["maths" , "chemistry","physics"]
+
+        let popbook = books.pop ()
+
+        console.log(books)
+        console.log(popbook)
+
+        // shift() = removes the first element of the array and returns the element
+
+        var friends = ["sai" , "avinash" , "ashok" , "mahi"]
+
+        friends.shift()
+
+        console.log (friends)
+        console.log (friends.length)
+
+        // unshift () = add one or more elements to the arraay from the beggining and returns the elements
+
+        var family = ["mummy" , "daddy" , "akka"]
+
+       var parents = family.unshift('annaya')
+
+        console.log(family)
+        console.log(parents)
+
+        // concat() = combine two or more arrays and returns a new array
+
+        var playernames = ["sai" , "aviansh" , "ashok" , "mahi"]
+
+        var score = [25 , 27 , 28 , 29]
+
+       var newplayers = playernames.concat(score)
+
+       console.log(newplayers)
+
+    //    join() =  creates a string by concatenating of an array and 
+    //               returns a string by a specified a seprator
+
+        var states = [77 , 65 , 78 ,"andra pardesh" , "telagana" , "delhi" , "tamilnadu"]
+
+       var newstates = states.join("**/")
+
+        console.log(newstates)
+
+
+    </script>
+</body>
+</html>
